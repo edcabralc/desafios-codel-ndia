@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Codelândia - Desafio - 01</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="brand">
+          <span>Codelândia</span>
+          <span>Blog</span>
+        </nav>
+        <div class="search-bar">
+          <span><img src="/images/search.svg" /></span>
+          <input
+            data-search="search"
+            type="text"
+            placeholder="Pesquisar no blog"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="container content">
+        <div class="posts">
+          <div class="posts-header">
+            <p>02 de jul, 2021</p>
+            <span class="icon" data-icon="icon"></span>
+          </div>
+          <h2 class="title">Agora é oficial: o Windows 11 está vindo</h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus
+            vel diam fringilla, eu ullamcorper ex iaculis.
+          </p>
+        </div>
+
+        <div class="posts">
+          <div class="posts-header">
+            <p>02 de jul, 2021</p>
+            <span class="icon" data-icon="icon"></span>
+          </div>
+          <h2 class="title">Tim Berners-Lee vai leiloar código-fonte da web</h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus
+            vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor
+            justo. Vestibulum nisl orci, lacinia venenatis leo sit amet,
+            pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et,
+            interdum ullamcorper libero.
+          </p>
+        </div>
+        <div class="posts">
+          <div class="posts-header">
+            <p>02 de jul, 2021</p>
+            <span class="icon" data-icon="icon"></span>
+          </div>
+          <h2 class="title">
+            Tem Firefox novo no pedaço e você vai querer migrar
+          </h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            vestibulum auctor est.
+          </p>
+        </div>
+
+        <div class="posts">
+          <div class="posts-header">
+            <p>02 de jul, 2021</p>
+            <span class="icon" data-icon="icon"></span>
+          </div>
+          <h2 class="title">John McAfee, criador do antivírus McAfee, morre</h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+            vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus
+            vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor
+            justo. Vestibulum nisl orci, lacinia venenatis leo sit amet,
+            pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et,
+            interdum ullamcorper libero.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      const sr = ScrollReveal({
+        origin: "top",
+        distance: "50px",
+        duration: 2000,
+        reset: false,
+      });
+
+      ScrollReveal().reveal(".posts", {delay: 200});
+      ScrollReveal().reveal(".post-header", {delay: 400});
+      ScrollReveal().reveal(".title", {delay: 500});
+      ScrollReveal().reveal(".description", {delay: 600});
+    </script>
+  </body>
+</html>
